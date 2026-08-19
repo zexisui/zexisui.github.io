@@ -27,17 +27,44 @@
     h2 {
       margin-bottom: 10px;
     }
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.profile-photo {
+  width: 220px;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 16px;
+}
+
+.intro-text {
+  flex: 1;
+}
+
+@media (max-width: 650px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+}
   </style>
 </head>
 
 <body>
 
-  <header>
+  <section class="intro">
+
+  <img src="Profile.JPG" alt="Zexi Liu" class="profile-photo">
+
+  <div class="intro-text">
     <h1>Zexi Liu</h1>
     <p>Business Analytics · SQL · Python · Tableau</p>
-  </header>
 
-  <section>
     <h2>About Me</h2>
     <p>
       I am currently pursuing a Master of Management in Analytics at McGill University,
@@ -46,23 +73,25 @@
       problems, particularly in business intelligence, operations,
       and data-driven decision making.
     </p>
-  </section>
+  </div>
 
-  <section>
-    <h2>Education</h2>
-    <p>Master of Management in Analytics, McGill University</p>
-    <p>B.Com. in Business Analytics, McGill University</p>
-  </section>
+</section>
+<section>
+  <h2>Education</h2>
+  <p>Master of Management in Analytics</strong>, McGill University — 2027</p>
+  <p>B.Com. in Business Analytics</strong>, McGill University — 2026</p>
+</section>
 
-  <section>
-    <h2>Projects</h2>
+<section>
+  <h2>Projects</h2>
 
-    <h3>Semantic Search & Vector Database Project</h3>
-    <p>
-      Built a prototype comparing traditional keyword search with
-      vector-based semantic retrieval for business documents.
-    </p>
-  </section>
+  <h3>Semantic Search & Vector Database Project</h3>
+  <p>
+    Built a prototype comparing traditional keyword search with
+    vector-based semantic retrieval for business documents.
+  </p>
+</section>
+
 
 </body>
 </html>
